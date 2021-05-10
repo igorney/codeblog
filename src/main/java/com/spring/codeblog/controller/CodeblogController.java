@@ -52,4 +52,9 @@ public class CodeblogController {
         codeblogService.save(post);
         return "redirect:/posts";
     }
+
+    @RequestMapping(value = "/error", method = RequestMethod.POST)
+    public String errorPost(){
+        return "redirect:/posts";
+    }
 }
